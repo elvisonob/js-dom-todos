@@ -19,6 +19,36 @@
       "title": "Lets go shopping",
       "completed": false,
       "id": 4
+    },
+    {
+      "title": "Doing chores",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "title": "Going to Paris",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "title": "hi",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "title": "going to france",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "title": "hiya",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "title": "peace out",
+      "completed": false,
+      "id": 10
     }
   ]
 }

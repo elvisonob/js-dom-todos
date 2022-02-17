@@ -41,13 +41,15 @@ function listToTodoForm() {
             .then(function(response) {
                 return response.json()
             })
-            .then(function(todo) {
-                console.log('fetch', todo)
-            })
+
 
 
 
         // (5) TODO: In the call back function from fetch, call createTodo with the new Todo
+        .then(function(todo) {
+            createTodo(todo)
+        })
+
     })
 }
 
@@ -66,6 +68,9 @@ function createTodo(todo) {
 
     // (6) TODO: if the todo is completed, make it grey
     // 
+    if (todo.completed === true) {
+        liEl.setAttribute('style', 'color:grey')
+    }
 
     const ulEl = document.querySelector('#todo-list')
     ulEl.append(liEl)
@@ -88,7 +93,6 @@ function init() {
             return response.json()
         })
         .then(function(todosArray) {
-            // console.log('Are you here?', json)
             createTodos(todosArray)
         })
 }
